@@ -16,7 +16,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Sanne 't Hooft (vervangen door jouw naam)
+Renee Stapert
 
 #### Je startniveau:
 Blauw, ik kan het opzich wel maar doe het niet genoeg
@@ -44,7 +44,7 @@ Homepagina
 
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Vind een winkel in de buurt
+Vind een winkel in de buurt (Recommended Retailers)
  ![image](https://user-images.githubusercontent.com/94540366/142642011-dacdc9a3-ce8c-4915-b84a-a1433f2cab97.png)
 
  
