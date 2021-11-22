@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Sanne 't Hooft (vervangen door jouw naam)
 
 #### Je startniveau:
-hier je startniveau (kies uit zwart, rood óf blauw)
+Blauw, ik kan het opzich wel maar doe het niet genoeg
 
 #### Je focus:
-hier je focus (kies uit responsive óf surface plane)
+Ik wil me graag focussen op de surface plane. Ik wil graag een professioneel uitziende website kunnen bouwen
  
 </details>
 
@@ -36,15 +36,17 @@ hier je focus (kies uit responsive óf surface plane)
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+https://marshall.com/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Homepagina  
+ ![image](https://user-images.githubusercontent.com/94540366/142641727-a90a4680-22ec-4bb4-94cf-430d4ea07af7.png)
+
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Vind een winkel in de buurt
+ ![image](https://user-images.githubusercontent.com/94540366/142642011-dacdc9a3-ce8c-4915-b84a-a1433f2cab97.png)
+
  
 </details>
 
