@@ -79,15 +79,16 @@ Vind een winkel in de buurt (Recommended Retailers)
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ 
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Christiaan Dirven      | Jack van Vlerken          | Renee Stapert    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Hoe je de CSS gestructureerd kan vormgeven, hoe begin je>  | Hoe maak ik van een button een foto?             | Wat is de beste manier om te beginnen? Stap voor stap of eerst de HTML, dan CSS, dan Java?     | en dan ik dat    |
+|  | Hoe maak ik een goed werkend hamburgermenu? | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 
