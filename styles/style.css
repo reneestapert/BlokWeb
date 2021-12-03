@@ -10,10 +10,307 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
+
+  margin: 0;
+  padding: 0;
+
+
+}
+
+:root {
+  --button-color: #B8AE79;
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
+                Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
 
 
 
+/**********************************************************************/
+/* algemene styling */
+/**********************************************************************/
 
+
+/* Alle a's */
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+
+
+
+/**********************************************************************/
+/* header  styling */
+/**********************************************************************/
+
+
+video {
+
+  z-index: 0;
+
+  width: 100%;
+  /* Breakpoint is op 740px, dan wordt de video minder hoog */
+}
+
+
+.logo {
+  position: absolute;
+
+  top: 1em;
+  left: 1em;
+
+  width: 20%;
+  opacity: 90%;
+}
+
+header nav:first-of-type ul {
+  display: flex;
+  flex-direction: row-reverse;
+
+  position: fixed;
+  top: 1em;
+  right: 0;
+
+  z-index: 100;
+
+}
+
+/* eerste nav de afbeeldingen lage opacity. Met hover de opacity op 0 */
+header nav:first-of-type ul li {
+  opacity: 60%; 
+  
+  background-color: black;
+  border: black .5px solid;
+  list-style: none;
+
+  padding: .4em;
+}
+
+header nav:first-of-type ul li:hover {
+  opacity: 90%;
+}
+
+header nav:nth-of-type(2) {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  
+  transform:translatex(100%);
+
+  transition: .3s;
+
+  width: 220px;
+  padding: 2em;
+
+  background-color: black;
+  opacity: 90%;
+}
+
+header nav:nth-of-type(2).uitschuiven {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  
+  transform:translatex(0%);
+
+  width: 220px;
+  padding: 2em;
+
+  background-color: black;
+  opacity: 90%;
+}
+
+header nav:nth-of-type(2) ul li {
+  position: relative;
+  top: 3em;
+
+  list-style: none;
+}
+
+header nav:nth-of-type(2) ul li a {
+  font-size: 1em;
+
+  color: white;
+  text-transform: none;
+}
+
+
+
+
+
+/**********************************************************************/
+/*  main  styling  */
+/**********************************************************************/
+
+
+/* Carroussel van plaatjes en linkjes */
+section ul {
+  position: relative;
+  top: 2em;
+
+  display: flex;
+  flex-direction: row;
+  overflow-x:auto;
+
+  width: calc(90% - 5em);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  scroll-snap-type: x mandatory;
+
+  gap: .8em;
+}
+
+section ul li {
+  width: 9.2em;
+  height: 10em;
+
+  list-style: none;
+
+  scroll-snap-align: center;
+
+}
+
+section ul li img {
+  width: 7em;
+  height: 7em;
+}
+
+section ul li a h1 {
+  font-size: .8em;
+
+  text-align: center;
+
+  color: black;
+}
+
+section ul li a h1:hover {
+  color: var(--button-color);
+
+}
+
+/* Alle linkjes/buttons, degene die op zichzelf staan. sign up, About */
+a h2 {
+  position: relative;
+  top: 5em;
+
+  font-size: 1em;
+  font-weight: normal;
+
+  text-align: center;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
+
+  color: var(--button-color);
+  border: var(--button-color) 1px solid;
+
+  width: 250px;
+  padding:.8em;
+}
+
+a h2:hover {
+  color: black;
+  border: black 1px solid;
+
+  transition: .2s ;
+}
+
+/* Artikelen met img, h3, p, a h2 */
+article {
+  position: relative;
+  top: 7em;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 80%;
+  
+}
+
+article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 70%;
+}
+
+article h3 {
+  text-transform: uppercase;
+  transform: scaleY(1.2);
+  transform-origin: bottom;
+  
+  font-size: 1.4em;
+  font-weight: bolder;
+
+  padding: .2em;
+  padding-left: 0em;
+
+}
+
+article h3:last-of-type {
+  padding-top: .5em;
+}
+
+/* De linkjes in de artikelen */
+article a h2 {
+  position: relative;
+  top: 0em;
+
+  display: block;
+  margin-left: 0em;
+  margin-right: auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
+
+  width: 125px;
+  padding:.5em;
+}
+
+form {
+  position: relative;
+  top: 7em;
+}
+
+form a h2 {
+  margin-top: 0em;
+  
+
+  width: 125px;
+  padding:.5em;
+}
+
+
+
+span {
+  font-weight: bold;
+}
+
+
+
+
+
+/**********************************************************************/
+/* footer styling  */
+/**********************************************************************/
+
+
+footer {
+  position: relative;
+  margin-top: 10em;
+}
+
+footer a img {
+  width: 100%;
+}
