@@ -78,27 +78,24 @@ Vind een winkel in de buurt (Recommended Retailers)
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
- 
+ De oefeningen doen gingen goed, het was een soort opfriscursus van een jaar geleden. Ik had de opdrachten wel al snel door, maar kon de moeilijkere oefeningen moeizaam maken. Het beginnen aan de site vond ik wat lastig, ik wist niet goed waar en hoe ik het best kon beginnen.
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| Christiaan Dirven      | Jack van Vlerken          | Renee Stapert    | student 4        |
+| Christiaan Dirven      | Jack van Vlerken          | Renee Stapert    |         |
 | ---            | ---                | ---          | ---              |
-| Hoe je de CSS gestructureerd kan vormgeven, hoe begin je>  | Hoe maak ik van een button een foto?             | Wat is de beste manier om te beginnen? Stap voor stap of eerst de HTML, dan CSS, dan Java?     | en dan ik dat    |
-|  | Hoe maak ik een goed werkend hamburgermenu? | nog een punt | dit wil ik zeker |
+| Hoe je de CSS gestructureerd kan vormgeven, hoe begin je>  | Hoe maak ik van een button een foto?             | Wat is de beste manier om te beginnen? Stap voor stap of eerst de HTML, dan CSS, dan Java?     |     |
+|  | Hoe maak ik een goed werkend hamburgermenu? | nog een punt |  |
 | ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Vooral alle HTML erin zetten en dan langzaam van boven naar beneden gaan stylen
+- De breakdownschets goed analyseren en daaruit je elementen halen
 
 </details>
 
@@ -112,7 +109,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Eindelijk begonnen aan de site. Ik merk dat ik het redelijk goed oppak, vooral met behulp van de oefeningen. Ik kan makkelijk terug kijken wat ik heb gedaan en dat vergelijken met mijn huidige code.
 
 
 ### Agenda voor meeting
