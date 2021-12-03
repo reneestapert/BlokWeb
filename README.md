@@ -115,15 +115,15 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Christiaan Dirven     | Jack van Vlerken          | Renee Stapert    |         |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Hamburger menu  | Animatie          | Hamburger menu    |     |
+| en dat ook nog | dit als er tijd is | Article tekst minder breed dan plaatje |  |
 | ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Problemen meteen op kunnen lossen
 
 - punt 1
 - punt 2
