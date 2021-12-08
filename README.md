@@ -123,7 +123,7 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-Problemen meteen op kunnen lossen
+Problemen meteen op kunnen lossen met behulp van Sanne
 
 - punt 1
 - punt 2
