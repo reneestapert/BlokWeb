@@ -1,0 +1,437 @@
+
+
+/*******************/
+/* general styling */
+/*******************/
+
+
+
+
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+
+  margin: 0;
+  padding: 0;
+
+
+}
+
+:root {
+  --button-color: #B8AE79;
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
+                Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+/**********************************************************************/
+/* algemene styling */
+/**********************************************************************/
+
+
+/* Alle a's */
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+
+  box-shadow: none;
+}
+
+a:hover {
+  color: var(--button-color);
+  border: black 1px solid;
+  background-color: black;
+
+  transition: .2s ;
+}
+
+a:focus {
+  color: var(--button-color);
+  border: black 1px solid;
+  background-color: black;
+
+  box-shadow: 0 0 0 2px var(--button-color);
+
+  transition: .2s;
+  outline: none;
+}
+
+
+
+
+
+/**********************************************************************/
+/* header  styling */
+/**********************************************************************/
+
+
+video {
+
+  z-index: 0;
+
+  width: 100%;
+  max-height: 60%;
+  /* Breakpoint is op 740px, dan wordt de video minder hoog */
+}
+
+
+/**********************************************************************/
+/*  main  styling  */
+/**********************************************************************/
+
+
+/* Ul van plaatjes en linkjes */
+section ul {
+  position: relative;
+  top: 2em;
+
+  display: flex;
+  flex-direction: row;
+  overflow-x:auto;
+
+  width: calc(90% - 5em);
+  max-width: 500px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  scroll-snap-type: x mandatory;
+
+  gap: .8em;
+}
+
+section ul::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+section ul li {
+  width: 9.2em;
+  height: 10em;
+
+  list-style: none;
+
+  scroll-snap-align: center;
+}
+
+section ul li img {
+  width: 7em;
+  height: 7em;
+}
+
+section ul li a h1 {
+  font-size: .8em;
+
+  text-align: center;
+
+  color: black;
+}
+
+section ul li a:hover {
+  border: none;
+  background-color: var(--button-color);
+}
+
+section ul li a h1:hover {
+  color: var(--button-color);
+}
+
+section ul li a:focus {
+  border:none;
+  background-color: var(--button-color);
+  box-shadow: none;
+}
+
+section button {
+  position: relative;
+  left: 3.5em;
+  top: 8.5em;
+
+  background-color: var(--button-color);
+  border: none;
+
+  width: 2.5em;
+  height: 2.5em;
+
+  transform: rotate(45deg);
+  z-index: 5;
+}
+
+section button:nth-of-type(2) {
+  left: 83%;
+  top: -6em;
+}
+
+section button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+section button:focus {
+  background-color: black;
+  outline: var(--button-color);
+}
+
+
+section button:first-of-type div {
+  width: 10px;
+  height: 10px;
+
+  position: relative;
+  top: 1px;
+  left: 11px;
+
+  border-bottom: white 1.8px solid;
+  border-left: white 1.8px solid;
+}
+
+section button:nth-of-type(2) div {
+  width: 10px;
+  height: 10px;
+
+  position: relative;
+  bottom: 1px;
+  right: -13px;
+
+  border-top: white 1.8px solid;
+  border-right: white 1.8px solid;
+}
+
+/* Alle linkjes/buttons, degene die op zichzelf staan. sign up, About */
+main > ul li a {
+  position: relative;
+  top: 5em;
+
+  font-size: 1em;
+  font-weight: bold;
+
+  text-align: center;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
+
+  color: var(--button-color);
+  border: var(--button-color) 1.5px solid;
+
+  width: 200px;
+  padding:.5em;
+}
+
+
+
+/* Artikelen met img, h3, p, a h2 */
+article {
+  position: relative;
+  top: 7em;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 90%;
+  max-width: 500px;
+}
+
+article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  order: -1;
+
+  max-width: 100%;
+}
+
+article h3 {
+  text-transform: uppercase;
+  transform: scaleY(1.2);
+  transform-origin: bottom;
+  
+  font-size: 1.4em;
+  font-weight: bolder;
+
+  padding: 0 1rem;
+}
+
+article p {
+  padding: 0 1em;
+}
+
+article h3:last-of-type {
+  padding-top: .5em;
+}
+
+/* De linkjes in de artikelen */
+article a {
+  position: relative;
+  top: 0em;
+
+  font-size: 1em;
+  font-weight: bold;
+
+  display: block;
+  margin-left: 1em;
+  margin-right: auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
+
+  padding:.5em 1em;
+
+  color: var(--button-color);
+  border: var(--button-color) 1.5px solid;
+}
+
+/* Form JOIN THE BAND */
+form {
+  position: relative;
+  top: 7em;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 90%;
+  max-width: 500px;
+}
+
+form h3 {
+  text-transform: uppercase;
+  transform: scaleY(1.2);
+  transform-origin: bottom;
+  
+  font-size: 1.4em;
+  font-weight: bolder;
+  text-align: center;
+
+  margin-top: 2em;
+  padding: 0 1rem;
+}
+
+form p {
+  text-align: center;
+  padding: .8em 0;
+  
+  font-size: 1em;
+  letter-spacing: -.2px;
+}
+
+form label {
+  padding: .2em 0;
+}
+
+form input {
+  font-size: 1em;
+  height: 30px;
+  padding: 0 .2em;
+  color: rgb(80, 80, 80);
+}
+
+form [type="text"]:focus, [type="email"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 1.5px var(--button-color);
+  border: var(--button-color) 1px solid;
+  border-radius: .5px;
+
+  transition: .3s;
+}
+
+form [type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 1em;
+  height: 1em;
+  border: black .3px solid;;
+  
+  background-color: rgb(206, 206, 206);
+
+  margin: .3em .3em;
+
+  position: relative;
+  top: .4em;
+  left: -.3em;
+  
+}
+
+form [type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 1.3px var(--button-color);
+  border: black .3px solid;
+  background-color: rgb(131, 131, 131);
+
+  transition: .2s;
+}
+
+form [type="checkbox"]:checked {
+  box-shadow: 0 0 0 .8px var(--button-color);
+  border: black .3px solid;
+  background-color: var(--button-color);
+  
+}
+
+form label:nth-of-type(4 + 5):focus {
+  color: aqua;
+}
+
+form a {
+  position: relative;
+  top: 1em;
+
+  font-size: 1em;
+  font-weight: bold;
+
+  text-align: center;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0em;
+  margin-bottom: .5em;
+
+  color: var(--button-color);
+  border: var(--button-color) 1.5px solid;
+
+  width: 125px;
+  padding:.5em;
+}
+
+
+
+
+span {
+  font-weight: bold;
+}
+
+/* ;input[type="search"]; voor alle inputs met type search */
+
+
+
+
+
+/**********************************************************************/
+/* footer styling  */
+/**********************************************************************/
+
+
+footer {
+  position: relative;
+  margin-top: 10em;
+}
+
+footer a img {
+  width: 100%;
+}
+
+
+
+
+

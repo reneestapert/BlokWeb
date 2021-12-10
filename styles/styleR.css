@@ -1,0 +1,13 @@
+
+
+
+
+
+header > img {
+  
+    z-index: 0;
+  
+    width: 100%;
+    max-height: 60%;
+    /* Breakpoint is op 740px, dan wordt de video minder hoog */
+  }

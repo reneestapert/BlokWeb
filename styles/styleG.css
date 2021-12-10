@@ -1,0 +1,224 @@
+
+
+/*******************/
+/* general styling */
+/*******************/
+
+
+
+
+/* CSS Document */
+*, *::after, *::before {
+    box-sizing:border-box;  
+  
+    margin: 0;
+    padding: 0;
+  
+  
+  }
+  
+  :root {
+    --button-color: #B8AE79;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
+                  Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  
+  
+  
+  
+  /**********************************************************************/
+  /* algemene styling */
+  /**********************************************************************/
+  
+  
+  /* Alle a's */
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+  
+    box-shadow: none;
+  }
+  
+  a:hover {
+    color: var(--button-color);
+    border: black 1px solid;
+    background-color: black;
+  
+    transition: .2s ;
+  }
+  
+  a:focus {
+    color: var(--button-color);
+    border: black 1px solid;
+    background-color: black;
+  
+    box-shadow: 0 0 0 2px var(--button-color);
+  
+    transition: .2s;
+    outline: none;
+  }
+  
+  
+  
+  
+  
+  /**********************************************************************/
+  /* header  styling */
+  /**********************************************************************/
+  
+
+  
+  .logo {
+    position: absolute;
+  
+    top: 1em;
+    left: 1em;
+  
+    width: 20%;
+    opacity: 90%;
+  }
+  
+  header nav:first-of-type ul {
+    display: flex;
+    flex-direction: row-reverse;
+  
+    position: fixed;
+    top: 1em;
+    right: 0;
+  
+    z-index: 100;
+  }
+  
+  header nav:first-of-type ul li {
+    list-style: none;
+  }
+  
+  /* eerste nav de afbeeldingen lage opacity. Met hover de opacity op 0 */
+  header nav:first-of-type ul li button {
+    background-color: black;
+    opacity: 60%; 
+    border: black .5px solid;
+  
+    padding: .4em;
+  }
+  
+  header nav:first-of-type ul li button:hover {
+    opacity: 90%;
+  }
+  
+  header nav:first-of-type ul li button:focus {
+    opacity: 90%;
+    outline-color: none;
+    box-shadow: 0 0 0 2px var(--button-color);
+  }
+  
+  /* Ontzichtbare link om met screenreader meteen naar de content te gaan */
+  .skipMenu {
+    position: absolute;
+    top: 1.3em;
+    left: 9em;
+  
+    opacity: 0;
+  
+    z-index: 999;
+  }
+  
+  .skipMenu:focus {
+    opacity: 1;
+  }
+  
+  /* Uitschuivend hamburgermenu  */
+  header nav:nth-of-type(2) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    
+    transform:translatex(100%);
+    z-index: 10;
+  
+    transition: .3s;
+  
+    width: 220px;
+    padding: 2em;
+  
+    background-color: black;
+    opacity: 90%;
+  }
+  
+  header nav:nth-of-type(2).uitschuiven {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    
+    transform:translatex(0%);
+  
+    width: 220px;
+    padding: 2em;
+  
+    background-color: black;
+    opacity: 90%;
+  }
+  
+  header nav:nth-of-type(2) ul li {
+    position: relative;
+    top: 3em;
+  
+    list-style: none;
+  }
+  
+  header nav:nth-of-type(2) ul li a {
+    font-size: 1em;
+    text-transform: none;
+    
+    color: white;
+  }
+  
+  header nav:nth-of-type(2) ul li:focus, header nav:nth-of-type(2) ul li a:focus {
+    opacity: 100%;
+    background-color: var(--button-color);
+    color: black;
+    border: none;
+  }
+  
+  header > button {
+    position: relative;
+    left: calc(50% - 1.9em);
+    top: -2.2em;
+  
+    background-color: var(--button-color);
+    border: none;
+  
+    width: 3.8em;
+    height: 3.8em;
+  
+    transform: rotate(45deg);
+  }
+  
+  header > button:hover {
+    cursor: pointer;
+    background-color: black;
+  }
+  
+  header > button:focus {
+    background-color: black;
+    outline: var(--button-color);
+  }
+  
+  header > button div {
+    width: 22px;
+    height: 22px;
+  
+    position: relative;
+    top: calc(50% - 1.9em);
+    left: 1em;
+  
+    border-bottom: white 3px solid;
+    border-right: white 3px solid;
+  }
+  
+  
+  
+  

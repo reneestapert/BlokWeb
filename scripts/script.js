@@ -16,5 +16,29 @@ function uitschuivenMenu (){
 
 
 
+var vorigeButton = document.querySelector ('section button:first-of-type');
+var volgendeButton = document.querySelector ('section button:nth-of-type(2)');
+var ulLinkjes = document.querySelector ('section ul li');
 
+var huidigeLink = 0;
 
+volgendeButton.addEventListener("click", volgendeLink);
+vorigeButton.addEventListener("click", vorigeLink);
+
+function volgendeLink () {
+    ulLinkjes.classList.toggle ("Rood");
+
+    huidigeLink = huidigeLink + 1;
+
+    console.log("Check");
+    console.log(huidigeLink);
+}
+
+function vorigeLink () {
+    ulLinkjes.classList.add ("Yellow");
+
+    huidigeLink = huidigeLink - 1;
+
+    console.log("Dubbel check");
+    console.log(huidigeLink);
+}
