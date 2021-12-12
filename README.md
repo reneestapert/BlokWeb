@@ -58,7 +58,8 @@ Vind een winkel in de buurt (Recommended Retailers)
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+[Breakdownschets FED Marshall.pdf](https://github.com/reneestapert/BlokWeb/files/7698680/Breakdownschets.FED.Marshall.pdf)
+
 
 ### dynamisch deel (bijv menu): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -142,7 +143,7 @@ Problemen meteen op kunnen lossen met behulp van Sanne
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+Linkjes zijn niet goed zichtbaar voor mensen zonder goed zicht.
 
 #### Titel eerste bevinding
 Hier korte omschrijving (met indien nodig een afbeelding)
