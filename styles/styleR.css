@@ -3,11 +3,138 @@
 
 
 
-header > img {
-  
-    z-index: 0;
-  
+/**********************************************************************/
+/*  header  styling  */
+/**********************************************************************/
+
+
+header > img:first-of-type {
     width: 100%;
-    max-height: 60%;
+
+    z-index: 0;
     /* Breakpoint is op 740px, dan wordt de video minder hoog */
-  }
+}
+
+header > a {
+    color: var(--link-text);
+    text-transform: none;
+
+    position: relative;
+    top: -.7em;
+    left: -2.5em;
+}
+
+header > a:hover {
+    color: var(--text-color);
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+/**********************************************************************/
+/*  main  styling  */
+/**********************************************************************/
+
+
+main h2 {
+    color: var(--text-color);
+    font-size: 2.2em;
+
+    text-transform: uppercase;
+    transform: scaleY(1.5);
+    transform-origin: bottom;
+
+    margin: 2em 0 1em 1em;
+}
+
+main ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main ul li {
+    color: var(--text-color);
+    font-size: 1.3em ;
+   list-style: none;
+
+}
+
+
+main ul li img {
+    width: 4em;
+    padding: 0em;
+    margin: .5em;
+}
+
+.check, .no-check {
+    width: 2rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90%;
+    max-width: 500px;
+}
+
+
+form label {
+    color: var(--text-color);
+    padding: .5em;
+}
+
+form [type="text"] {
+    position: relative;
+    right: -1em;
+    width: 70%;
+    padding: .5em;
+    margin: .5em;
+}
+
+
+main section {
+    position: relative;
+    top: 2em;
+}
+
+main section h3 {
+    text-transform: uppercase;
+    text-align: center;
+
+    transform: scaleY(1.2);
+    transform-origin: bottom;
+  
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: var(--text-color);
+
+    padding: 0 1rem;
+}
+
+main section ul li a {  
+    font-size: .9rem;
+    font-weight: bold;
+  
+    text-align: center;
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin: .5em;
+  
+    color: var(--button-color);
+    border: var(--button-color) 1.5px solid;
+  
+    width: 200px;
+    padding:.5em;
+}

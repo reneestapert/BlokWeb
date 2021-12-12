@@ -14,31 +14,50 @@ function uitschuivenMenu (){
 
 };
 
-
-
 var vorigeButton = document.querySelector ('section button:first-of-type');
 var volgendeButton = document.querySelector ('section button:nth-of-type(2)');
-var ulLinkjes = document.querySelector ('section ul li');
+var ulLinkje = document.querySelector ('section ul li');
+var ulLinkjes = document.querySelectorAll ('section ul li');
 
 var huidigeLink = 0;
+var currentLink = document.querySelector ('section ul li:nth-of-type(' + [ huidigeLink] + ')');
 
 volgendeButton.addEventListener("click", volgendeLink);
 vorigeButton.addEventListener("click", vorigeLink);
 
 function volgendeLink () {
-    ulLinkjes.classList.toggle ("Rood");
 
+    currentLink.classList.add("focus");
+    
     huidigeLink = huidigeLink + 1;
+    
+    
+
+    // Als de linkjes op zijn, ga dan weer naar de eerste
+    if (huidigeLink > 7 ) {
+        huidigeLink = 0 ;      
+        ulLinkje.src =  'section ul li:nth-of-type(' + [ huidigeLink] + ')';
+    }
+
 
     console.log("Check");
     console.log(huidigeLink);
 }
 
 function vorigeLink () {
-    ulLinkjes.classList.add ("Yellow");
+    currentLink.classList.remove ("focus");
 
     huidigeLink = huidigeLink - 1;
+
+    
+
+    // Als de linkjes op zijn, ga dan naar de laatste link
+    if (huidigeLink < 0 ) {
+        huidigeLink = 7 ;      
+        ulLinkje.src =  'section ul li:nth-of-type(' + [ huidigeLink] + ')';
+    }
 
     console.log("Dubbel check");
     console.log(huidigeLink);
 }
+
