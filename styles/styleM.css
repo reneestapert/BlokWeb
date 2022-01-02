@@ -4,7 +4,12 @@
 
 
 /**********************************************************************/
-/*  main  styling  */
+/*  HOMEPAGINA STYLING  */
+/**********************************************************************/
+
+
+/**********************************************************************/
+/*  Main styling  */
 /**********************************************************************/
 
 
@@ -15,7 +20,7 @@ main section ul {
 
   display: flex;
   flex-direction: row;
-  overflow-x:auto;
+  overflow-x: auto;
 
   width: calc(90% - 5em);
   max-width: 500px;
@@ -27,13 +32,13 @@ main section ul {
   margin-left: auto;
   margin-right: auto;
 
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x-mandatory;
 
   gap: .8em;
 
   border: var(--button-color) .7px solid;
 
-/* Code van Sanne */
+/* Code van Sanne. De scrollbalk laten verdwijnen */
   -webkit-overflow-scrolling: touch; /* voor iOS*/
   -ms-overflow-style: none; /* voor IE */
 	scrollbar-width: none; /* voor firefox */
@@ -66,20 +71,22 @@ main section ul li a {
 
 main section ul li a:hover {
   border: none;
-  background-color: var(--button-color);
+  background-color: var(--button-hover);
   color: var(--hover-text-color);
 }
 
 main section ul li a:focus {
   border:none;
-  background-color: var(--button-color);
-  box-shadow: none;
+  background-color: var(--button-hover);
+  box-shadow: 0 0 0 2px var(--button-color);
 }
 
-section button {
+#vorige, #volgende {
   position: relative;
-  left: 3.5em;
-  top: 10em;
+  left: 2.8em;
+  top: 8.5em;
+
+  display: block;
 
   background-color: var(--button-color);
   border: none;
@@ -91,46 +98,44 @@ section button {
   z-index: 5;
 }
 
-section button:nth-of-type(2) {
+#volgende {
   left: 83%;
-  top: -7em;
+  top: -6em;
 }
 
-section button:hover {
+#vorige:hover, #volgende:hover {
   cursor: pointer;
   background-color: var(--button-hover);
 }
 
-section button:focus {
+#vorige:focus, #volgende:focus {
   background-color: var(--button-hover);
   outline: var(--button-color);
 }
 
-
-section button:first-of-type div {
+#vorige div {
   width: 10px;
   height: 10px;
 
   position: relative;
-  top: 1px;
-  left: 11px;
+  top: 15px;
+  left: 15px;
 
   border-bottom: var(--div-button-hover) 1.8px solid;
-  border-left: var(--div-button-hover) solid;
+  border-left: var(--div-button-hover) 1.8px solid;
 }
 
-section button:nth-of-type(2) div {
+#volgende div {
   width: 10px;
   height: 10px;
 
   position: relative;
-  bottom: 1px;
-  right: -13px;
+  bottom: -15px;
+  right: -15px;
 
   border-top: var(--div-button-hover) 1.8px solid;
   border-right: var(--div-button-hover) 1.8px solid;
 }
-
 
 /* Alle linkjes/buttons, degene die op zichzelf staan. sign up, About */
 main > ul li a {
@@ -155,7 +160,6 @@ main > ul li a {
   padding:.5em;
 }
 
-
 /* Artikelen met img, h3, p, a h2 */
 article {
   position: relative;
@@ -175,6 +179,7 @@ article img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   order: -1;
 
   max-width: 100%;
@@ -221,7 +226,6 @@ article a {
   color: var(--button-color);
   border: var(--button-color) 1.5px solid;
 }
-
 
 /* Form JOIN THE BAND */
 form {
@@ -275,11 +279,11 @@ form input {
   color: var(--input-color);
 }
 
+/* input[type="text"]; voor alle inputs met type text */
 form [type="text"], [type="email"] {
   border: var(--button-color) 1px solid;
 }
 
-/* ;input[type="text"]; voor alle inputs met type text */
 form [type="text"]:focus, [type="email"]:focus {
   outline: none;
   box-shadow: 0 0 0 1.5px var(--button-color);
@@ -308,6 +312,10 @@ form [type="checkbox"] {
   left: -.3em;
 }
 
+form [type="checkbox"]:hover {
+  background-color: var(--hover-background-color);
+}
+
 form [type="checkbox"]:focus {
   outline: none;
   box-shadow: 0 0 0 1.3px var(--button-color);
@@ -323,25 +331,6 @@ form [type="checkbox"]:checked {
   background-color: rgb(24, 24, 24);
 }
 
-form a {
-  position: relative;
-  top: 1em;
 
-  font-size: 1em;
-  font-weight: bold;
 
-  text-align: center;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0em;
-  margin-bottom: .5em;
-
-  color: var(--button-color);
-  border: var(--button-color) 1.5px solid;
-
-  width: 125px;
-  padding:.5em;
-}
 

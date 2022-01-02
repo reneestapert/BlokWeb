@@ -4,7 +4,7 @@
 
 
 /*******************/
-/* general styling */
+/* GENERAL STYLING */
 /*******************/
 
 
@@ -14,8 +14,6 @@
   
     margin: 0;
     padding: 0;
-  
-  
 }
   
 :root {
@@ -50,7 +48,7 @@
         --titel-color: #B8AE79;
         --input-color: rgb(221, 221, 221);
 
-        --link-background: black;
+        --link-background: rgb(29, 29, 29);
         --link-text: #B8AE79;
         --hover-background-color: #B8AE79;
         --hover-text-color: black;
@@ -65,6 +63,10 @@
 /* algemene styling */
 /**********************************************************************/
   
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: var(--background);
@@ -88,9 +90,55 @@ a:hover {
 }
   
 a:focus {
-    color: var(--button-color);
+    color: var(--hover-text-color);
     border: var(--button-color) 1px solid;
     background-color: var(--hover-background-color);
+  
+    box-shadow: 0 0 0 2px var(--button-color);
+  
+    transition: .2s;
+    outline: none;
+}
+
+main button {
+    position: relative;
+    top: 1em;
+
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    text-align: center;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0em;
+    margin-bottom: .5em;
+
+    color: var(--button-color);
+    border: var(--button-color) 1.5px solid;
+    background-color: var(--link-background);
+
+    width: 125px;
+    padding:.5em;
+}
+
+main button:hover {
+    color: var(--button-color);
+    border: var(--button-color) 1.5px solid;
+    background-color: var(--hover-background-color);
+    color: var(--hover-text-color);
+  
+    transition: .2s ;
+
+    cursor: pointer;
+}
+
+main button:focus {
+    color: var(--hover-text-color);
+    border: var(--button-color) 1px solid;
+    background-color: var(--button-hover);
   
     box-shadow: 0 0 0 2px var(--button-color);
   
@@ -106,6 +154,23 @@ a:focus {
 /* Header  styling */
 /**********************************************************************/
   
+
+/* Ontzichtbare link om met screenreader meteen naar de content te gaan */
+.skipMenu {
+    position: absolute;
+    top: 1.3em;
+    left: 9em;
+
+    color: var(--button-color);
+  
+    transform: translateY(-200%);
+  
+    z-index: 999;
+}
+  
+.skipMenu:focus {
+    transform: translateY(0);
+}
   
 .logo {
     position: absolute;
@@ -122,9 +187,8 @@ video {
     height: 100%;
 
     z-index: 0;
-                                        /* Breakpoint is op 740px, dan wordt de video minder hoog */
 }
-  
+
 header nav:first-of-type ul {
     display: flex;
     flex-direction: row-reverse;
@@ -164,21 +228,6 @@ header nav:first-of-type ul li button:focus {
     opacity: 90%;
     outline-color: none;
     box-shadow: 0 0 0 2px var(--button-color);
-}
-  
-/* Ontzichtbare link om met screenreader meteen naar de content te gaan */
-.skipMenu {
-    position: absolute;
-    top: 1.3em;
-    left: 9em;
-  
-    opacity: 0;
-  
-    z-index: 999;
-}
-  
-.skipMenu:focus {
-    opacity: 1;
 }
   
 /* Uitschuivend hamburgermenu  */
@@ -276,7 +325,7 @@ header > button div {
 
 
 /**********************************************************************/
-/* General styling  */
+/* Main styling  */
 /**********************************************************************/
 
 
@@ -398,8 +447,6 @@ footer section ul:last-of-type {
     gap: 1.4em;
 }
 
-
-
 footer section ul:last-of-type li {
     position: relative;
     top: 2em;
@@ -426,7 +473,6 @@ footer section ul li img {
     width: 1.8em;
     height: 1.8em;
 }
-
 
 footer > p {
     margin: 1em;

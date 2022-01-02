@@ -14,7 +14,9 @@
 </head>
 
 <body>
-	
+	<!-- Tijdens navigeren met tab, het menu overslaan -->
+	<a href="#main" class="skipMenu">Sla menu over</a>
+
 	<header>
 
 		<video autoplay="" loop="" muted="" title="Marshall video" >
@@ -24,7 +26,9 @@
 		<!-- img in een h1 zetten, titel van pagina -->
 		<h1><img src="images/Marshall_logo_120px.jpg" alt="Marshall Logo" class="logo"></h1>
 
+		<!-- Hamburgermenu -->
 		<nav>
+			<!-- Alle menu button die altijd zichtbaar zijn -->
 			<ul>
 				<li><button><img src="images/menu.png" alt="Hamburger Menu"></button></li>
 				<li><button><img src="images/search.png" alt="Zoeken"></button></li>
@@ -35,13 +39,12 @@
 			</ul>
 		</nav>
 
-		<!-- aatje om naar de content te skippen -->
-		<a href="#main" class="skipMenu">Sla menu over</a>
+		<!-- Menu items  -->
 		<nav>
 			<ul>
 				<li><a href="#">Live for Music</a></li>
 				<li><a href="#">About</a></li>
-				<li><a href="/recommendedRetailers.html">Recommended Retailers</a></li>
+				<li><a href="recommendedRetailers.html">Recommended Retailers</a></li>
 				<li><a href="#">Marshall Amps</a></li>
 				<li><a href="#">Shop</a></li>
 				<li><a href="#">Marshall Records</a></li>
@@ -59,23 +62,29 @@
 
 	</header>
 
-	<main>
+	<main id="main">
 		<section>
-			<button>
+			<!-- Aatje. Je gaat naar een ander deel van de content -->
+			<a id="vorige" href="previous">
+				<!-- Divs voor de pijltjes in de button -->
 				<div></div>
-			</button>
+			</a>
+
 			<ul>											
-				<li><a href="#"><img src="images/MarshallAmps.jpg" alt="Marshall Amps">Marshall Amps</a></li>
-				<li><a href="#"><img src="images/NatalDrums.jpg" alt="Natural drums">Natural drums</a></li>
-				<li><a href="#"><img src="images/Lifestyle.jpg" alt="Livestyle">lifestyle</a></li>
-				<li><a href="#"><img src="images/shop.jpg" alt="Shop">shop</a></li>
-				<li><a href="#"><img src="images/MarshallStudio.jpg" alt="Marshall Studio">Marshall Studio</a></li>
-				<li><a href="#"><img src="images/MarshallRecords.jpg" alt="Marshall Records">Marshall records</a></li>
-				<li><a href="#"><img src="images/MarshallLiveAgency.jpg" alt="Marshall Live Agency">Marshall live agency</a></li>
+				<li id="element1"><a href="#"><img src="images/MarshallAmps.jpg" alt="Marshall Amps">Marshall Amps</a></li>
+				<li id="element2"><a href="#"><img src="images/NatalDrums.jpg" alt="Natural drums">Natural drums</a></li>
+				<li id="element3"><a href="#"><img src="images/Lifestyle.jpg" alt="Livestyle">lifestyle</a></li>
+				<li id="element4"><a href="#"><img src="images/shop.jpg" alt="Shop">shop</a></li>
+				<li id="element5"><a href="#"><img src="images/MarshallStudio.jpg" alt="Marshall Studio">Marshall Studio</a></li>
+				<li id="element6"><a href="#"><img src="images/MarshallRecords.jpg" alt="Marshall Records">Marshall records</a></li>
+				<li id="element7"><a href="#"><img src="images/MarshallLiveAgency.jpg" alt="Marshall Live Agency">Marshall live agency</a></li>
 			</ul>
-			<button>
+
+			<!-- Aatje. Je gaat naar een ander deel van de content -->
+			<a id="volgende" href="next">
+				<!-- Divs voor de pijltjes in de button -->
 				<div></div>
-			</button>
+			</a>
 		</section>
 
 		<ul>
@@ -117,7 +126,7 @@
 		</article>
 
 		<form>
-			<!-- h2 van maken -->
+			<!-- Inschrijf formulier -->
 			<h2>Join the band</h2>
 			<p>Sign up to our newsletter to get the best Marshall advice, latest news, artist insights and more every two weeks.</p>
 			
@@ -134,24 +143,20 @@
 
 			<label><input type="checkbox" name="noRobot">Ik ben geen robot</label>
 
-			<a href="#">sign up</a>
-			<!-- Button ervan maken -->
+			<button>sign up</button>
 		</form>
-
-
 
 	</main>
 	
 	<footer>
+		<!-- Artikel in de footer. Een soort scheiding tussen main en footer content -->
 		<a href="#">
 			<img src="images/footerIMG.jpg" alt="Marshall Speaker">
 			<h2>Bringing sound home</h2>
 			<p>For the party. For the home. For the road. No matter where, there's a Marshall speaker for it.</p>
-			
 		</a>
 
 		<section>
-
 			<ul>
 				<li>Need some help?</li>
 				<li><a href="#">Contact Us</a></li>
@@ -180,14 +185,11 @@
 				<li><img src="images/SpotifyIcon.png" alt="Spotify"></li>
 			</ul>
 
-			
 		</section>
 
-		<p>© 2021 - Renee Stapert - 500850876</p>
-
+		<p>2021 - Renee Stapert - 500850876</p>
 
 	</footer>
-
 
 	<script src="scripts/script.js"></script>
 </body>
