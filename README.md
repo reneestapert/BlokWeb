@@ -10,7 +10,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Jij
+## Jij (Renee Stapert)
 
 <details>
 <summary>uitwerken voor kick-off werkgroep</summary>
@@ -22,7 +22,7 @@ Renee Stapert
 Blauw, ik kan het opzich wel maar doe het niet genoeg
 
 #### Je focus:
-Ik wil me graag focussen op de surface plane. Ik wil graag een professioneel uitziende website kunnen bouwen
+Ik wil me graag focussen op de surface plane. Ik wil graag een professioneel uitziende website kunnen bouwen.
  
 </details>
 
@@ -55,17 +55,21 @@ Vind een winkel in de buurt (Recommended Retailers)
 ## Breakdownschets (week 1)
 
 <details>
-<summary>uitwerken na afloop 2e werkgroep</summary>
+<summary>Een screenshot van de volledige pagina van de website van Marshall. Hier ga je alle elementen labelen als HTML elementen. Je zet een label bij iedere 'img', bij iedere 'p', etc. Zo de hele pagina af gaan waardoor je een veel beter beeld krijgt van wat je in je eigen HTML document moet gaan zetten.</summary>
 
 ### de hele pagina: 
 [Breakdownschets FED Marshall.pdf](https://github.com/reneestapert/BlokWeb/files/7698680/Breakdownschets.FED.Marshall.pdf)
 
 
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+### dynamisch deel 1:
+ De carrousel met linkjes naar verschillende pagina's op de site.
+![dynamisch element Marshall](https://user-images.githubusercontent.com/94540366/147881187-cfbfa8dc-d5a1-4a13-a691-1e0a7f2f3c0d.jpg)
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+
+### wellicht nog een dynamisch deel 2: 
+ Het inschrijfformulier om jezelf in te schrijven voor allerlei soorten nieuwsberichten.
+![dynamisch element Marshall2](https://user-images.githubusercontent.com/94540366/147881197-49ae08c1-8a7b-43a8-adf6-4611382b0661.jpg)
+
 
 </details>
 
@@ -87,8 +91,8 @@ samen met je groepje opstellen
 
 | Christiaan Dirven      | Jack van Vlerken          | Renee Stapert    |         |
 | ---            | ---                | ---          | ---              |
-| Hoe je de CSS gestructureerd kan vormgeven, hoe begin je>  | Hoe maak ik van een button een foto?             | Wat is de beste manier om te beginnen? Stap voor stap of eerst de HTML, dan CSS, dan Java?     |     |
-|  | Hoe maak ik een goed werkend hamburgermenu? | nog een punt |  |
+| Hoe je de CSS gestructureerd kan vormgeven, hoe begin je?  | Hoe maak ik van een button een foto?             | Wat is de beste manier om te beginnen? Stap voor stap of eerst de HTML, dan CSS, dan Java?     |     |
+|  | Hoe maak ik een goed werkend hamburgermenu? |  |  |
 | ...            | ...                | ...          | ...              |
 
 
@@ -124,10 +128,10 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-Problemen meteen op kunnen lossen met behulp van Sanne
+Problemen meteen op kunnen lossen met behulp van Sanne. 
 
-- punt 1
-- punt 2
+- Bij de href van de aatjes een '#' zetten. Dit zorgt ervoor dat de pagina niet meteen gerefresht wordt.
+- 
 - nog een punt
 - ...
 
@@ -140,33 +144,32 @@ Problemen meteen op kunnen lossen met behulp van Sanne
 ## Toegankelijkheidstest (week 4)
 
 <details>
-<summary>uitwerken na test in 8e voortgang</summary>
+<summary>Tijdens de toegankelijkheidstest ben ik aan de slag gegaan met, grappig genoeg, het testen van de teogankelijkheid van mijn site. De site die ik na heb gemaakt van Marshall ging ik op verschillende manieren benaderen. Met specifiek de tab toets, het gehele toestenbord en met verschillende brillen naar de website kijken. Deze testjes hebben mij een ander inzicht gegeven wat er nog meer verbeterd kan worden aan mijn replica van Marshall zodat iedereen de site makkelijk kan gebruiken. </summary>
 
 ### Bevindingen
-Linkjes zijn niet goed zichtbaar voor mensen zonder goed zicht.
+ - Linkjes niet goed zichtbaar. 
+ - Tab toets gaat door het hele hamburger menu.
+ - Duidelijkere feedback op interactieve elementen.
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Linkjes niet goed zichtbaar. 
+De linkjes naar andere delen van de site zijn niet volledig zichtbaar voor mensen met slecht zicht. Het contrast is niet groot genoeg om te kunnen zien wat er staat.
+ ![image](https://user-images.githubusercontent.com/94540366/147888056-da9f6aa8-4996-4549-a684-a1f6f528113f.png)
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Als oplossing kan ik de kleur van de linkjes een donkerdere kleur geven waardoor ze meer opvallen. Ook is het een optie om de hover state extra contrasterend te maken. In plaats van alleen een dikkere border in te stellen, ook een andere achtergrond waardoor de tekst leesbaarder zal worden.
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Tab toets gaat door het hele hamburger menu. 
+Als je met de TAB toets door de pagina heen gaat wordt je automatisch door het hele hamburgermenu geleid. Dit is natuurlijk heel erg vervelend als je eigenlijk alleen wil weten wat er op de pagina zelf staat.
+ ![image](https://user-images.githubusercontent.com/94540366/147888856-63b96191-5475-49b0-b2bf-fae69cf34853.png)
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Een oplossing is bijvoorbeeld een verstopte link die alleen tevoorschijn komt als je met je toetsenbord gebruikt om te navigeren. Aan de hand van een linkje helemaal aan het begin van het HTML document zal dit het eerste element dat focust wanneer je gaat navigeren. Met behulp van 'transform: translateY(-200%);' wordt de link buiten de pagina geplaatst en zodra erop gefocust wordt het percentage 0, waardoor de link op zijn plek komt te staan en dus zichtbaar is.
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Duidelijkere feedback op interactieve elementen. 
+Eigenlijk weer terug vallend op de eerste bevinding. De linkjes en interactieve elementen moeten duidelijker vormgegeven worden voor de juiste feedback. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Een goede oplossing kan zijn, de achtergrond en de border een duidelijk andere kleur te geven dan het origineel. Zo is er een duidelijk verschil tussen de verschillende states en ook tijdens het navigeren van verschillende manieren.
+
 
 </details>
 
@@ -186,20 +189,19 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Christiaan Dirven      | Jack van Vlerken          | Renee Stapert    |         |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Kruisje bij hamburgermenu  | Winkelmandje probleem             | De carrousel werkt niet, hoe krijg ik m werkbaar?    |     |
+|  |  | Hoe kan ik de checkboxes stylen? |  |
 | ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Er werd veel tijd genomen om onze problemen op te proberen te lossen. Mijn problemen werden niet perse meteen opgelost, ik kreeg vooral linkjes/bronnen van oplossingen naar mij toegeschoven. 
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Oplossing voor carrousel; https://codepen.io/shooft/pen/mdBOZLz?editors=0110
+- Oplossing voor checkbox styling; https://dev.to/proticm/styling-html-checkboxes-is-super-easy-302o
+
 
 </details>
 
@@ -213,11 +215,20 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+Over het algemeen ging het namaken van de Marshall wel goed. In het begin liep ik wat achter, maar heb alsnog goed meekunnen doen met alle lessen. Ik begreep dingen erg snel en kon ze op de juiste manier verwerken in mijn replica. Wat ik wat lastiger vond was het researchen van oplossingen. Als ik ergens tegenaan liep ging ik het opzoeken op internet en vond ik steeds maar niet de juiste informatie om mijn probleem op te lossen.
+ Ik heb niet alles afkunnen krijgen om de eerste kans te halen, maar wel ruim optijd voor de herkansing. Mede kwam dit door dingen opzoeken waar ik niet uit kwam en ook zelfdiscipline. 
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+ Homepagina
+![image](https://user-images.githubusercontent.com/94540366/147889354-b8e46f19-bc35-45ac-b93d-ac2e7ad23f6b.png)
+![image](https://user-images.githubusercontent.com/94540366/147889361-6f2ce29a-6f45-40fa-a4ee-f41c72ddcd21.png)
+
+ Recommended Retailers
+ ![image](https://user-images.githubusercontent.com/94540366/147889367-081e43ff-8c5f-435a-9e3f-e048aa8576a4.png)
+![image](https://user-images.githubusercontent.com/94540366/147889371-3555b1c6-4467-4e00-a84d-f7fe97e72cf3.png)
+
 
 </details>
 
@@ -230,10 +241,6 @@ hier screenshot(s) van je eindresultaat
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-1. bron 1
-2. bron 2
-3. ...
+Alle gebruikte bronnen staan in mijn code verwerkt!
 
 </details>
